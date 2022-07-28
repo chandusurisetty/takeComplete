@@ -1,7 +1,3 @@
-
-
-from numpy import take
-import pandas as ps
 import json
 from flask import Flask, redirect, render_template, request, url_for
 import json
