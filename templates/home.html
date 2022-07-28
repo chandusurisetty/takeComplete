@@ -1,0 +1,15 @@
+{%extends "bootstrap/base.html"%}
+
+{% block content%}
+<div class="container">
+    <h1><span>N</span> days challege</h1>
+    <div>
+        <h2><a style="background-color:black;" href="{{url_for('create')}}">create a challege</a> </h2>
+    </div><br>
+    {%for eachfile in nameLIst%}
+    <div>
+
+        <p> <a href="challenge/{{eachfile}}">{{eachfile}} challenge</a></p>
+    </div> {%endfor%}
+</div>
+{%endblock%}
